@@ -1,0 +1,28 @@
+@charset "utf-8";
+* {
+    margin: 0; padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.form {
+    line-height: 50px;
+    text-align: center;
+}
+
+.idCheckBox {
+    font-weight: bold;
+    text-align: center;
+}
+
+.inputBox {
+    text-align: center;
+}

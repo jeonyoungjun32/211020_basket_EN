@@ -1,0 +1,219 @@
+﻿@charset "utf-8";
+/*mypage 정보*/
+#mypage {
+	float:left;
+	height: 100%;
+}
+#mypage h2 {
+	margin-top:30px;
+	margin-left:50px;
+}
+
+#mypageInfo {
+	height: 500px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypageInfo th {
+	width: 200px;
+}
+
+#mypageInfo td {
+	width: 500px;
+	padding-left: 30px;
+}
+#mypageUpdateInfo {
+	width:600px;
+	height: 500px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypageUpdateInfo  td {
+	padding-left: 30px;
+}
+
+
+/* 버튼과 전송 */
+#mypageUpdateInfo .update {
+	text-align: center;
+}
+
+/*mypage 입금*/
+#mypageMoney {
+	height: 300px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypageMoney th {
+	width: 100px;
+}
+
+#mypageMoney td {
+	width: 300px;
+	padding-left: 30px;
+}
+
+#mypageMoney label {
+	margin-right: 10px;
+}
+
+#mypageMoney .money {
+	text-align: center;
+}
+
+/*mypage 포인트*/
+#mypagePoint {
+	height: 300px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypagePoint th {
+	width: 100px;
+}
+
+#mypagePoint td {
+	width: 300px;
+	padding-left: 30px;
+}
+
+#mypagePoint .point {
+	text-align: center;
+}
+
+#mypagePointList {
+	overflow:hidden;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypagePointList p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#mypagePointList a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+#mypagePointList a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*mypage 탈퇴*/
+#mypageLeave {
+	height: 300px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypageLeave th {
+	width: 100px;
+}
+
+#mypageLeave td {
+	width: 300px;
+	padding-left: 30px;
+}
+
+#mypageLeave .delete {
+	text-align: center;
+}
+
+/* 주문내역 */
+#mypageOrder {
+	overflow:hidden;
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+.mypageOrder_ViewCount {
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+.mypageOrder_ViewCount {
+width: 150px;
+padding: 0 0.5em;
+border: 1px solid #999;
+font-family: inherit;
+background: url('../../img/mypage/arrow.jpeg') no-repeat 95% 50%;
+border-radius: 0px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+#mypageOrder_ViewCount::-ms-expand {
+	display: none;
+}
+
+#mypageOrder th:nth-child(1) {
+	width: 100px;
+	text-align: center;
+}
+
+#mypageOrder th:nth-child(2) {
+	width: 200px;
+}
+
+#mypageOrder th:nth-child(3) {
+	width: 50px;
+}
+
+#mypageOrder th:nth-child(4) {
+	width: 100px;
+}
+#mypageOrder th:nth-child(5) {
+	width: 100px;
+}
+#mypageOrder th:nth-child(6) {
+	width: 100px;
+}
+#mypageOrder th:nth-child(7) {
+	width: 200px;
+}
+
+#mypageOrder th:nth-child(8) {
+	width: 80px;
+}
+
+#mypageOrder input[type=submit] {
+	background-color: white;
+	border:none;
+	color:black;
+	width: 30px;
+	cursor: pointer;
+}
+
+#mypageOrder input[type=submit]:hover {
+	font-weight: bold;
+}
+
+#mypageOrder a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+
+#mypageOrder p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#mypageOrder a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.orderTextBox {
+	margin-top:10px;
+	margin-left: 50px;
+}

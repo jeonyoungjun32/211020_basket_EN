@@ -1,0 +1,494 @@
+﻿@charset "utf-8";
+/*초기화 부분*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ a {
+     text-decoration: none;
+ }
+html {
+    scroll-behavior: smooth;/*스크롤 부드럽게 사용*/
+}
+ul {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.header_btn_box {
+    width: 30px; height: 30px;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 20;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+ /*header*/
+ .header {
+     width: 100%;
+     overflow: hidden;
+     position: fixed;
+     top:0; left: 0;
+     z-index: 10;
+     background-color: white;
+ }
+ 
+ .header_top {
+     width: 100%;
+ }
+ /*header scroll_box*/
+ .header .scroll_box {
+     width: 330px;
+     float: left;
+     height: 133px;
+     line-height: 133px;
+     margin-left: 30px;
+     text-align: center;
+     font-weight: bold;
+}
+.scroll_box > ul > li {
+    float: left;
+    width: auto;
+    margin-right: 20px;
+}
+
+.scroll_box a {
+    color: black;
+}
+
+.scroll_box  a:hover {
+    color: red;
+}
+
+ /*header logo*/
+.header .logo_img {
+    position: absolute;
+    top:0; left:50%;
+    margin-left:-80px;
+}
+
+/*header login*/
+ .header .login_box {
+    float: right;
+    width: auto;
+    height: 133px;
+    cursor: default;
+ }
+ .header .login_box a {
+     margin-right: 20px;
+     line-height: 133px;
+ }
+
+ .header .login_box a {
+    color:black;
+ }
+ .header .login_box a:hover {
+    font-weight: bold;
+ }
+ .header .text_box {
+    width: 500px;
+    float: right;
+}
+/*search_box*/
+ .header .search_box {
+    float: right;
+    width: auto;
+    height: 133px;
+    line-height: 133px;
+    margin-right: 30px;
+}
+/*button*/
+.button {
+    display: none;
+}
+.button > img{
+    display: none;
+}
+/*nav*/
+.header .nav {
+    width: 100%;
+    overflow: hidden;
+    margin:auto;
+    margin-top: 140px;
+    background: linear-gradient( to bottom, white,  skyblue);
+}
+.header .nav > ul > li{
+     float: left;
+     margin-left: 20px;
+     margin-right: 2%;
+     padding: 0 10px;
+     font-weight: bold;
+ }
+ .header .nav_li {
+     height: 30px;
+     overflow: hidden;
+     transition-duration: 0.5s;
+     text-align: center;
+     cursor: default;
+     line-height: 30px;
+ }
+ .header .nav_li:hover {
+     height: 200px;
+     margin-bottom: 10px;
+ }
+ .header .nav_li:nth-child(1) {
+     margin-left: 20%;
+ }
+ .header .nav_li p {
+     margin-bottom: 20px;
+ }
+ .header .nav_li a {
+     line-height: 30px;
+     color: black;
+     transition-duration: 0.1s;
+ }
+ .header .nav_li a:hover {
+     text-shadow: -1px 1px 3px black;
+     color:skyblue
+}
+.header_backgound {
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.header_backgound > .opacity_bottom {
+    position: absolute;
+    bottom: 0; left:0;
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(to top, rgba(135, 207, 235,1),rgba(0, 0, 0, 0));
+}
+
+#article {
+    width: 100%;
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+}
+#article .img_box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#article .img_box .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#article > .bottom_button {
+    position: absolute;
+    bottom: 5%; left:0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+#article > .bottom_button > a {
+    display: inline-block;
+    color: white;
+    height: 10px;
+    width: 10px;
+    font-size: 0vw;
+    margin:0 20px;
+    border-radius: 10px;
+    background: white;
+    transition-duration: 0.3s;
+}
+#article > .bottom_button > a:hover {
+    opacity: 0.5;
+}
+#article > .opacity_top {
+    position: absolute;
+    top: 0; left:0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(135, 207, 235,1),rgba(255, 255, 255, 0) 40%);
+}
+#article > .opacity_bottom {
+    position: absolute;
+    bottom: 0; left:0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, rgba(0,0,0,1),rgba(0, 0, 0, 0) 60%);
+}
+
+/*공통 섹션이라 추후 수정*/
+#section {
+    width: 100%;
+    padding-top:175px;
+    overflow: hidden;
+    background: linear-gradient(to bottom,white,skyblue);
+}
+
+#icecreamRank {
+	width: 100%;
+	padding-top:175px;
+	overflow: hidden;
+	text-align: center;
+	background-color: black;
+	/* background:linear-gradient(to bottom,white,skyblue); */
+}
+
+#icecreamRank .icecreamTitle {
+	margin-bottom: 50px;
+	color:white;
+	cursor: default;
+	font-size:3em;
+	text-shadow: 2px 2px 5px yellow;
+}
+
+#icecreamRank .icecreamTitle span {
+	font-weight: bold;
+    background:linear-gradient(to right, #2042ff, #04ffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 10px white;
+}
+
+#icecreamRank .iceRankBox {
+	width: 90%;
+	margin: 0 auto;
+	height: 1024px;
+	position: relative;
+}
+
+.icecreamrank {
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    animation: fadein 3s;
+    position: absolute;
+}
+
+.icecreamrank .ice {
+	border-radius:300px;
+    animation: animateimg 5s linear infinite;
+}
+
+.icecreamrank:nth-child(1) {
+	top:0; left:50%;
+	margin-left: -150px;
+}
+
+.icecreamrank:nth-child(2) {
+	top:100px; left:20%;
+}
+
+.icecreamrank:nth-child(3) {
+	top:200px; right:20%;
+}
+
+.icecreamrank:nth-child(4) {
+	top:480px; left:10%;
+}
+
+.icecreamrank:nth-child(5) {
+	top:550px; right:10%;
+}
+
+.icecreamrank .contextBox .iceName{ 
+	color:white;
+	font-size:1.2em;
+	font-weight: bold;
+	cursor: default;
+}
+
+.icecreamrank:nth-child(1) .contextBox .iceRanking {
+	font-size: 3em;
+	color:gold;
+	cursor: default;
+}
+
+.icecreamrank .contextBox .iceRanking {
+	animation: animaterank 5s linear infinite;
+}
+
+@keyframes animaterank {
+    0%,100%
+    {
+        text-shadow: 1px 1px 10px white;
+    }
+    50% {
+        text-shadow: 1px 1px 0px white;
+    } 
+}
+
+@keyframes animateimg {
+    0%,100%
+    {
+        box-shadow: 10px 10px 100px white;
+    }
+    50% {
+        box-shadow: 0px 0px 0px white;
+    }
+}
+
+
+.icecreamrank:nth-child(2) .contextBox .iceRanking {
+	font-size: 2.5em;
+	color:red;
+	cursor: default;
+}
+
+.icecreamrank:nth-child(3) .contextBox .iceRanking {
+	font-size: 2em;
+	color:blue;
+	cursor: default;
+}
+
+.icecreamrank:nth-child(4) .contextBox .iceRanking {
+	font-size: 1.8em;
+	color:yellow;
+	cursor: default;
+}
+
+.icecreamrank:nth-child(5) .contextBox .iceRanking {
+	font-size: 1.5em;
+	color:green;
+	cursor: default;
+}
+
+.icecreamrank .contextBox .iceRanking{ 
+	font-weight: bold;
+	color:gold;	
+}
+
+.sectionConnet {
+	width:100%;
+	height:50px;
+	border-radius:50% 50% 0 0;
+	background-color:gray;
+	z-index: 1;
+	box-shadow: 1px 1px 50px white;
+}
+#etcBox {
+	width: 100%;
+	background-color:gray;
+	overflow:hidden;
+}
+
+#etcBox .etcbox_contect {
+	width: 90%;
+	height: 80px;
+	margin:0 auto;
+	background-color: gray;
+}
+
+#etcBox .etcbox_contect .etcbox_count {
+	width:600px;
+	height:100px;
+	text-align: center;
+	margin:0 auto;
+}
+
+#etcBox .etcbox_contect #Time{
+	width:300px;
+	box-sizing:border-box;
+	font-weight:bold;
+	float:left;
+	font-size:30px;
+	color:white;
+	cursor: default;
+}
+
+#etcBox .etcbox_contect .etcViewCount {
+	width:300px;
+	box-sizing:border-box;
+	font-weight:bold;
+	float:left;
+	font-size:30px;
+	color:white;
+	cursor: default;
+}
+
+
+#footer {
+    width: 100%;
+    overflow: hidden;
+    background-color: gray;
+    color: white;
+}
+#footer .copywriter {
+    float: left;
+    width: 800px;
+    margin-left: 20px;
+    margin-top: 50px;
+    line-height: 20px;
+}
+
+#footer .copywriter p {
+	float: left;
+}
+
+#footer .copywriter p:nth-of-type(n+3):after {
+	content: '|';
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+}
+#footer .link {
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 50px inset;
+    float: right;
+    width: 300px;
+    height: 120px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+
+/*연결 페이지*/
+#footer .link a{
+    display: block;
+    float: left;
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#footer .link a:nth-of-type(1) {
+    margin-left: 30px;
+}
+#footer .link a:nth-of-type(4) {
+    margin-left: 30px;
+}
+#footer .link .facebook_logo {
+    background-image:url('../img/logo/logo.png');
+    background-position: -13px -13px;
+}
+#footer .link .instagram_logo {
+    background-image:url('../img/logo/logo.png');
+    background-position: -73px -13px;
+}
+#footer .link .naver_logo {
+    background-image:url('../img/logo/logo.png');
+    background-position: -13px -73px;
+}
+#footer .link .kakao_logo {
+    background-image:url('../img/logo/logo.png');
+    background-position: -133px -73px;
+}
+#footer .link .twitter_logo {
+    background-image:url('../img/logo/logo.png');
+    background-position: -133px -133px;
+}
+
+/*회원 정보 article*/
+#article_logininfo {
+	width: 100%;
+	overflow:hidden;
+	background-color: yellow;
+}

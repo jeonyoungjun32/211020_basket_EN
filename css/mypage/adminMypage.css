@@ -1,0 +1,374 @@
+﻿@charset "utf-8";
+
+/*mypage 정보 및 수정*/
+#mypage {
+	float:left;
+	height: 100%;
+}
+#mypage h2 {
+	margin-top:30px;
+	margin-left:50px;
+}
+
+#mypageInfo {
+	height: 500px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypageInfo th {
+	width: 200px;
+}
+
+#mypageInfo td {
+	width: 500px;
+	padding-left: 30px;
+}
+
+#mypageInfo .delete {
+	text-align: center;
+}
+
+/*adminmypage 입금*/
+#mypageMoney {
+	height: 300px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypageMoney th {
+	width: 100px;
+}
+
+#mypageMoney td {
+	width: 300px;
+	padding-left: 30px;
+}
+
+#mypageMoney label {
+	margin-right: 10px;
+}
+
+#mypageMoney .money {
+	text-align: center;
+}
+
+/*mypage 포인트*/
+#mypagePoint {
+	height: 300px;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypagePoint th {
+	width: 100px;
+}
+
+#mypagePoint td {
+	width: 300px;
+	padding-left: 30px;
+}
+
+#mypagePoint .point {
+	text-align: center;
+}
+
+#mypagePointList {
+	overflow:hidden;
+	margin-top:30px;
+	margin-left: 50px;
+}
+
+#mypagePointList p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#mypagePointList a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+#mypagePointList a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*서버 total*/
+#serverTotal {
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+#totalPagePointList {
+	margin-top:10px;
+	margin-left: 50px;	
+}
+
+
+#totalPagePointList p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#totalPagePointList a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+#totalPagePointList a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#totalPagePointList .submitBox {
+	text-align: center;
+}
+
+#totalPagePointList .submitBox a {
+	float: none;
+}
+/*회원 전체 조회*/
+#adminMemberList {
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+#adminMemberList .TotalResult {
+	text-align: right;
+}
+
+.memberListView_Count {
+	margin-top:10px;
+	margin-left: 40px;
+	width: 150px;
+	padding: 0 0.5em;
+	border: 1px solid #999;
+	font-family: inherit;
+	background: url('../../img/mypage/arrow.jpeg') no-repeat 95% 50%;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.memberListView_Count::-ms-expand {
+	display: none;
+}
+
+#adminMemberList p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#adminMemberList a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+#adminMemberList a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*상품 등록*/
+#productInsert {
+	overflow: hidden;
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+/*상품 리스트*/
+#adminProductList {
+	overflow: hidden;
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+.product_Select {
+	margin-top:10px;
+	margin-left: 50px;
+	width: 150px;
+	padding: 0 0.5em;
+	border: 1px solid #999;
+	font-family: inherit;
+	background: url('../../img/mypage/arrow.jpeg') no-repeat 95% 50%;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+#adminProductList p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#adminProductList a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+#adminProductList a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.product_Select::-ms-expand {
+	display: none;
+}
+
+/*상품 정보*/
+#productInfo {
+	height: 500px;
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+#productInfo th {
+	width: 200px;
+}
+
+#productInfo td {
+	width: 500px;
+	padding-left: 30px;
+}
+
+#productInfo .update {
+	text-align: center;
+}
+
+/*상품 정보 수정*/
+#mypageUpdateInfo {
+	height: 500px;
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+#mypageUpdateInfo th {
+	width: 200px;
+}
+
+#mypageUpdateInfo td {
+	width: 300px;
+	padding-left: 10px;
+}
+
+#mypageUpdateInfo .update {
+	text-align: center;
+}
+
+/*제고 등록*/
+#Product_table {
+	width:400px;
+	overflow:hidden;
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+#Product_table_submit {
+	width: 400px;
+	margin-top:10px;
+	margin-left: 50px;
+	text-align: center;
+}
+
+#Product_table_submit {
+	width: 400px;
+	margin-top:10px;
+	margin-left: 50px;
+	text-align: center;
+}
+
+#Product_table_submit a {
+	color:black;
+}
+
+#Product_table_submit a:active {
+	color:red;
+}
+
+
+/*제고 리스트*/
+#IOlist {
+	overflow: hidden;
+	margin-left: 50px;
+}
+.IOlistLink {
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+.IOlistLink a {
+	color:black;
+}
+.IOlistLink a:hover {
+	font-weight: bold;
+}
+
+
+#IOlist p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#IOlist a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+#IOlist a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+/*전체 주문 내역*/
+#adminOrderList {
+	overflow: hidden;
+	margin-top:10px;
+	margin-left: 50px;
+}
+
+.order_ViewCount {
+	margin-top:10px;
+	margin-left: 50px;
+	width: 150px;
+	padding: 0 0.5em;
+	border: 1px solid #999;
+	font-family: inherit;
+	background: url('../../img/mypage/arrow.jpeg') no-repeat 95% 50%;
+	border-radius: 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+#adminOrderList p {
+	float:left;
+	margin-right:10px;
+	cursor: default;
+}
+
+#adminOrderList a {
+	float:left;
+	margin-right:10px;
+	color:inherit;
+}
+
+#adminOrderList a:hover {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.searchID {
+	margin-left: 50px;
+}
+
+.orderTextBox {
+	margin-left: 50px;
+}

@@ -1,0 +1,373 @@
+﻿@charset "utf-8";
+#order_section {
+	width: 100%;
+	overflow:hidden;
+	padding-top:200px;
+	padding-bottom:100px;
+	background-color: skyblue;
+}
+
+#order_section .order_section_title {
+	text-align:center;
+	margin-bottom: 30px;
+	cursor: default;
+}
+
+#order_section .orderSelect {
+	width:400px;
+	height:20px;
+	text-align:center;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+.orderList_select {
+	width: 200px;
+	height:20px;
+	font-weight:bold;
+	border: none;
+	border-radius: 10px;
+}
+
+#order_section .orderSelect input[type=submit]{
+	width: 100px;
+	height:20px;
+	border: none;
+	border-radius:10px;
+	box-sizing:border-box;
+	background-color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+#order_section .orderSelect input[type=submit]:hover{
+	background-color: black;
+	color: white;
+}
+
+.orderSelectNullBox {
+	width:300px;
+	height:1024px;
+	text-align:center;
+	margin: 30px auto;
+	font-weight: bold;
+	cursor: default;	
+}
+
+.orderSelectNullBox p {
+	color:white;
+	font-size:16px;
+	transition-duration: 0.1s;
+}
+
+.orderSelectNullBox p:hover {
+	font-size:20px;
+	color:black;
+}
+
+/*리스트 선택후*/
+
+.orderSelectText {
+	width:300px;
+	height:50px;
+	text-align:center;
+	margin: 10px auto;
+	font-weight: bold;
+	cursor: default;	
+}
+
+.orderSelectText p {
+	color:white;
+	font-size:20px;
+	transition-duration: 0.1s;
+}
+
+.orderSelectText p:hover {
+	font-size:24px;
+	color:black;
+}
+
+#order_section_result #result_box {
+	width: 87%;
+	margin: 0 auto;
+}
+
+#order_section_result #result_box .ListProduct {
+	width: 300px;
+	height:330px;
+	margin-top:30px;
+	margin-right:30px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow: hidden;
+	position:relative;
+	border-radius:50px;
+	border: 1px solid black;
+	float:left;
+	background-color: rgba(255,255,255,0.5);
+}
+
+#order_section_result .ListProduct::after {
+	content: '';
+	position: absolute;
+	inset:4px;
+	background:#CEECF5;
+	border-radius:50px;
+}
+
+#order_section_result .ListProduct::before {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height:150%;
+	background: linear-gradient(blue,orange);
+}
+
+#order_section_result .ListProduct:hover::before {
+	animation : productAnimate 3s linear infinite;
+}
+
+@keyframes productAnimate {
+	0% {
+	transform: rotate(0deg);
+	}	
+	100% 
+	{
+	transform: rotate(360deg);
+	}
+}
+
+
+#order_section_result .ListProduct .contextBox {
+	z-index: 1;
+	text-align: center;
+	margin-top:-20px;
+	margin-bottom: -50px;
+}
+#order_section_result .ListProduct .contextBox .Img {
+	margin-top:-50px;
+	margin-bottom: -50px;
+}
+#order_section_result .ListProduct .productContext .product_name {
+	font-size:1.2em;
+	font-weight: bold;
+	margin-top:20px;
+	cursor: default;
+}
+#order_section_result .ListProduct .productContext .product_price {
+	cursor: default;
+	margin-bottom: 3px;
+}
+
+#order_section_result .ListProduct .productContext .product_price span{
+	cursor: default;
+	font-size:0.8em;
+	margin-bottom: 3px;
+}
+
+#order_section_result .ListProduct .contextBox .checkbox {
+	margin:0 auto;
+}
+
+#order_section_result .ListProduct .contextBox .checkbox input[type=checkbox]{
+	width:20px;
+	height:20px;
+	border: 3px solid red;
+	background-color: yellow;
+	margin-bottom: 10px;
+}
+
+#order_section_result .ListProduct .contextBox .productnull {
+	position:absolute;
+	top:0; left:0;
+	background-size:cover;
+	z-index: 20;
+}
+ 
+/*전송 버튼*/
+#order_section_result .submitBox {
+	width:500px;
+	margin: 0px auto;
+	text-align:center;
+}
+
+#order_section_result .submitBox input[type=submit]{
+	width: 50px;
+	border: none;
+	border-radius:10px;
+	background-color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+#order_section_result .submitBox input[type=submit]:hover{
+	background-color: black;
+	color: white;
+}
+
+#order_section_result .submitBox input[type=reset]{
+	width: 100px;
+	border: none;
+	border-radius:10px;
+	background-color: white;
+	font-weight: bold;
+	margin-left:20px;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+#order_section_result .submitBox input[type=reset]:hover{
+	background-color: black;
+	color: white;
+}
+
+/*주문 페이지*/
+#orderResult_section {
+	width: 100%;
+	overflow:hidden;
+	padding-top:200px;
+	padding-bottom:100px;
+	background-color: skyblue;
+}
+
+#orderResult_section .orderResult_section_title {
+	text-align:center;
+	margin-bottom: 30px;
+	cursor: default;
+}
+
+.orderResultNullBox {
+	width:300px;
+	height:1280px;
+	text-align:center;
+	margin: 30px auto;
+	font-weight: bold;
+	cursor: default;	
+}
+
+.orderResultNullBox p {
+	color:white;
+	font-size:16px;
+	transition-duration: 0.1s;
+	margin-bottom: 20px;
+}
+
+.orderResultNullBox p:hover {
+	font-size:20px;
+	color:black;
+}
+
+.orderResultNullBox a {
+	color:white;
+	font-size:20px;
+	transition-duration: 0.1s;
+}
+
+.orderResultNullBox a:hover {
+	font-size:24px;
+	color:black;
+}
+
+#orderResult {
+	width:80%;
+	margin:20px auto;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 50px;
+	box-shadow: 10px 10px 30px black;
+}
+#orderResult th, #orderResult td {
+	padding: 10px;
+}
+#orderResult th {
+	background-color: white;
+}
+
+#orderResult tr:nth-of-type(n+2) {
+	height: 200px;
+	background-color: white;
+}
+
+#orderResult tr:nth-of-type(n+2) img {
+	width:200px;
+	height:200px;
+}
+
+#orderResult .countTd > input[type=text] {
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	width:200px;
+	height:40px;
+	border-bottom: 3px double skyblue;
+	background:none;
+}
+
+#orderResult .countTd > input::placeholder {
+	color:black;
+	font-size:1.2em;
+	font-weight: bold;
+}
+
+#orderResult tr:nth-of-type(odd) td{
+	background-color: lightgray;
+}
+
+#submitBox {
+	width:50%;
+	margin:50px auto;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 50px;
+	box-shadow: 10px 10px 30px black;
+}
+
+#submitBox .listgo {
+	font-size:20px;
+	margin-right:20px;
+	font-weight: bold;
+	color:black;
+	transition-duration:0.5s;
+}
+
+#submitBox .listgo:hover {
+	text-shadow:5px 5px 1px gray;
+}
+
+#submitBox input[type=submit] {
+	width: 80px;
+	border-radius:10px;
+	background-color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+#submitBox input[type=submit]:hover{
+	background-color: black;
+	color: white;
+}
+
+#submitBox .how_select {
+	height:20px;
+	font-weight:bold;
+	border:2px solid black;
+	border-radius: 10px;
+}
+
+#submitBox .myPoint {
+	font-weight: bold;
+}	
+
+#submitBox .totalPrice {
+	font-size:1.5em;
+	font-weight: bold;
+}
+
+#submitBox .pointTip {
+	font-weight:bold;
+	text-decoration: underline;
+}

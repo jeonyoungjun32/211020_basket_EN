@@ -1,0 +1,138 @@
+﻿@charset "utf-8";
+#listDetailSection {
+	width:100%;
+	overflow:hidden;
+	margin:0 auto;
+	padding-top:200px;
+	background-color: skyblue;
+}
+
+#listDetailSection .productInfo {
+	width: 500px;
+	height: 520px;
+	margin: 0 auto;
+	background-color:rgba(255,255,255,0.5);
+	border: 3px solid white;
+	border-radius: 100px;
+	margin-bottom: 100px;
+}
+
+#listDetailSection .productInfo .contextBox {
+	position:relative;
+	text-align: center;
+}
+
+#listDetailSection .productInfo .contextBox .iceImg:after {
+	content: '';
+	position: absolute;
+}
+
+#listDetailSection .productInfo .contextBox .Img {
+	margin: 0 auto;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .productName {
+	font-size:1.5em;
+	font-weight: bold;
+	margin-top: -60px;
+	margin-bottom: 10px;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .textBoxDetail .textBoxDetailTable {
+	width:440px;
+	margin: 0 auto;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .textBoxDetail .textBoxDetailTable th {
+	background-color: skyblue;
+	border-top :1px solid black;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .textBoxDetail .textBoxDetailTable td {
+	background-color: white;
+	border-bottom: 1px solid black;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .textBoxDetail .textBoxDetailTable span {
+	font-size: 0.8em;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .textBoxDetail .productBuy {
+	margin-bottom: 50px;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .textBoxDetail .productBuy a {
+	text-decoration:none;
+	font-weight: bold;
+	font-size:20px;
+	color: black;
+}
+
+#listDetailSection .productInfo .contextBox .textBox .textBoxDetail .productBuy a:hover {
+	text-shadow: 1px 1px 1px black;
+}
+
+#listDetailSection #productList {
+	width:800px;
+	border: 3px solid white;
+	box-shadow:5px 5px 30px black;
+	border-radius: 100px;
+	background-color:white;
+	opacity:0.5;
+	margin: 50px auto;
+    transition-duration: 0.5s;
+}
+#listDetailSection #productList:hover {
+	opacity: 1;
+}
+
+#listDetailSection #productList h2 {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+#listDetailSection #productList .productListTable {
+	width:600px;
+	margin: 50px auto;
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+}
+
+#listDetailSection #productList .productListTable td:nth-of-type(1) {
+	text-align: center;
+}
+
+#listDetailSection #productList .productListTable th {
+	background-color: skyblue;
+}
+
+#listDetailSection #productList .productListTable th:nth-of-type(3) {
+	width:100px;
+}
+
+#listDetailSection #productList .productListTable th:nth-of-type(4) {
+	width:200px;
+}
+
+#listDetailSection #productList .productListTable td {
+	background-color: white;
+}
+
+#listDetailSection #productList .productListTable tr:nth-of-type(odd) td {
+	background-color: lightgray;
+}
+
+#listDetailSection #productList .productListTable td a  {
+	color:black;
+	text-decoration: none;
+}
+
+#listDetailSection #productList .productListTable td a:hover  {
+	font-weight: bold;
+}
+
+#listDetailSection #productList .productListTable td span {
+	float:right;
+	font-size: 0.8em;
+}

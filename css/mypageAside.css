@@ -1,0 +1,38 @@
+@charset "utf-8";
+#mypage_aside {
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 1280px;
+    text-align: center;
+    background-color: gray;
+}
+
+#mypage_aside > nav > ul > .nav_f_li {
+    width: auto;
+    font-weight: bold;
+    cursor: default;
+}
+
+#mypage_aside > nav > ul > .nav_f_li:nth-child(1) {
+	margin-top: 10px;
+}
+
+#mypage_aside > nav > ul > .nav_f_li:nth-child(n+2) {
+	margin-top: 40px;
+}
+
+#mypage_aside > nav  .nav_f_li:nth-child(n+1) > ul > li {
+    margin-left: 20px;
+    text-align: left;
+}
+#mypage_aside > nav  .nav_f_li:nth-child(n+1) > ul > li > a {
+	color:black;
+    font-weight: normal;
+}
+#mypage_aside > nav  .nav_f_li:nth-child(n+1) > ul > li > a:hover {
+	color:white;
+}
+#mypage {
+    float: left;
+}

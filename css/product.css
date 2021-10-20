@@ -1,0 +1,225 @@
+﻿@charset "utf-8";
+
+#listSection {
+	width:100%;
+	overflow:hidden;
+	padding-top:170px;
+	padding-bottom:100px;
+	background-color: skyblue;
+}
+#all_box {
+	width: 88%;
+	margin: 0 auto;
+}
+
+#ListProduct {
+	width: 300px;
+	height:330px;
+	margin-top:30px;
+	margin-right:30px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	overflow: hidden;
+	position:relative;
+	border-radius:50px;
+	float:left;
+	background-color: rgba(255,255,255,0.5);
+}
+
+#ListProduct::after {
+	content: '';
+	position: absolute;
+	inset:4px;
+	background:#CEECF5;
+	border-radius:50px;
+}
+
+#ListProduct::before {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height:150%;
+	background: linear-gradient(blue,orange);
+}
+#ListProduct:hover::before {
+	animation : animate 3s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+	transform: rotate(0deg);
+	}	
+	100% 
+	{
+	transform: rotate(360deg);
+	}
+}
+
+#ListProduct .contextBox {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+}
+
+#ListProduct .contextBox .Img {
+	margin-top:-20px;
+	margin-bottom: -50px;
+}
+#ListProduct .productInfo .product_title {
+	font-size:1.2em;
+	font-weight: bold;
+	margin-top:20px;
+	cursor: default;
+}
+#ListProduct .productInfo .product_price {
+	cursor: default;
+	margin-bottom: 3px;
+}
+
+#ListProduct .productInfo .product_price span{
+	cursor: default;
+	font-size:0.8em;
+	margin-bottom: 3px;
+}
+
+#ListProduct .form input[type=submit]{
+	border: none;
+	font-weight: bold;
+	background-color: inherit;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+#ListProduct .form input[type=submit]:hover {
+	text-shadow: 1px 1px 2px black;
+}
+
+#ListProduct .contextBox .productnull {
+	position:absolute;
+	top:0; left:0;
+	background-size:cover;
+	z-index: 20;
+}
+
+
+/*장바구니*/
+#basketSection {
+	width:100%;
+	overflow:hidden;
+	padding-bottom:100px;
+	background-color: skyblue;
+}
+
+.basket_title { 
+	text-align: center;
+	font-size: 2em;
+	font-weight:bold;
+	margin: 30px;	
+	margin-top: 200px;
+	cursor: default;
+	border: none;
+}
+
+.basket_title span{
+	color:white;
+	text-shadow: 1px 1px 3px black;
+	transition-duration: 0.5s;
+}
+
+.basket_title span:hover{
+	color:black;
+	text-shadow: 1px 1px 3px white;
+}
+
+#basketTable { 
+	width: 80%;
+	overflow:hidden;
+	margin: 0 auto;
+	text-align: center;
+	border-radius:50px;
+	box-shadow: 10px 10px 30px black;
+}
+
+#basketTable input[type=submit] {
+	width: 80px;
+	border-radius:10px;
+	background-color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+#basketTable input[type=submit]:hover{
+	background-color: black;
+	color: white;
+}
+
+#basketTable th, #basketTable td{
+    padding: 10px;
+}
+
+#basketTable th {
+	background-color: white;
+}
+
+#basketTable tr:nth-of-type(n+2) {
+	height: 200px;
+}
+
+#basketTable tr:nth-child(odd) td {
+	background-color: lightgray;
+}
+
+#basketTable img{
+	width:200px;
+	right:200px;
+}
+
+#basketTable tr td .basketLink {
+	color:black;
+}
+
+#orderMoney {
+	width: 50%;
+	margin: 40px auto;
+	box-shadow: 10px 10px 30px black;
+	border-radius: 5px;
+}
+
+#orderMoney .totalMoney p{
+	font-weight: bold;
+}
+
+#orderMoney th, td{
+    padding: 10px;
+    background-color: white;
+}
+
+#orderMoney tr td p u{
+	font-weight: bold;
+}
+
+#orderMoney .orderMoneylink {
+	text-align: center;
+}
+
+#orderMoney .orderMoneylink input[type=button]{
+	width: 80px;
+	border-radius:10px;
+	background-color: white;
+	font-weight: bold;
+	cursor: pointer;
+	transition-duration: 0.5s;
+}
+
+#orderMoney .orderMoneylink input[type=button]:hover{
+	background-color: black;
+	color: white;
+}
+
+.footerColor {
+	width:100%;
+	height:50px;
+	background: linear-gradient(to bottom, skyblue, gray);
+}
+
